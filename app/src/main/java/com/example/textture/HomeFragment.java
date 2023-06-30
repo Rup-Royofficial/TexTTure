@@ -99,7 +99,7 @@ public class HomeFragment extends Fragment {
         RequestBody requestBody = RequestBody.create(jsonObject.toString(),JSON);
         Request request  =  new Request.Builder()
                 .url("https://api.openai.com/v1/images/generations")
-                .header("Authorization","Bearer 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")
+                .header("Authorization","Bearer OpenAI txt2img API key") //use the key after Bearer
                 .post(requestBody)
                 .build();
 
