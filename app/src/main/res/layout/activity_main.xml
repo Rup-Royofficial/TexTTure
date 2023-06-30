@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color_light4"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/theme_color_base_dark"
+        app:fabCradleMargin="10dp"
+        app:fabCradleVerticalOffset="5dp"
+        app:fabCradleRoundedCornerRadius="50dp">
+        <!--    //cradle margin nivher round shape ta ar fab ir modhe distance ta barai
+        cradle offset fab ke upore othai
+        radius ta roundness ta shundor kroe
+        -->
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            app:elevation="0dp"
+            android:background="@android:color/transparent"
+            app:menu="@menu/bottom_navbar"
+            app:itemIconTint="@color/theme_color_light3"
+            app:itemTextColor="@color/theme_color_light3"
+            app:itemIconSize="25dp"
+            app:itemRippleColor="@color/blueGray"/>
+<!--        elevation here in bNV removes the shadowy part of bNV-->
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/bottomAppBar"
+        android:src="@drawable/baseline_send_24"
+        android:backgroundTint="@color/theme_color_light7"
+        app:tint="@color/theme_color_base_dark"
+        app:maxImageSize="25dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

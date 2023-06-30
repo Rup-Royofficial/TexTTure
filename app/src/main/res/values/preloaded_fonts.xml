@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <!--        <item>@font/archivo_bold</item>-->
+        <item>@font/aleo</item>
+        <item>@font/alike_angular</item>
+        <item>@font/antic_slab</item>
+        <item>@font/arapey</item>
+        <item>@font/archivo_medium</item>
+        <item>@font/athiti_medium</item>
+        <item>@font/averia_libre_bold</item>
+        <item>@font/be_vietnam_light</item>
+        <item>@font/open_sans</item>
+        <item>@font/roboto</item>
+        <item>@font/roboto_medium</item>
+        <item>@font/roboto_thin</item>
+    </array>
+</resources>

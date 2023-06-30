@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="splashSreen">
+        <item>Generate pictures from text using AI</item>
+        <item>Be directly involved in the world of AI</item>
+        <item>One of the few apps that gives you a seamless experience</item>
+    </string-array>
+</resources>

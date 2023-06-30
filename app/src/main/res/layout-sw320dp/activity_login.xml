@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color_light4"
+    tools:context=".LoginActivity">
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="50dp"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4_login"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2_login"
+        app:layout_constraintStart_toStartOf="@+id/guideline1_login"
+        app:layout_constraintTop_toTopOf="@+id/guideline3_login"
+        app:neumorph_backgroundColor="@color/theme_color_light8"
+        app:neumorph_insetBottom="15dp"
+        app:neumorph_insetEnd="17dp"
+        app:neumorph_insetStart="17dp"
+        app:neumorph_insetTop="15dp"
+        app:neumorph_lightSource="leftTop"
+
+        app:neumorph_shadowColorDark="@color/glaucous"
+        app:neumorph_shadowColorLight="@color/bone_white"
+        app:neumorph_shadowElevation="8dp"
+        app:neumorph_shapeType="flat"
+        app:neumorph_strokeColor="@color/theme_color_light5"
+        app:neumorph_strokeWidth="0.5dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/login_smiley_animation"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="10dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/login_wink"
+            app:lottie_speed="1" />
+
+        <EditText
+            android:id="@+id/loginEmailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="35dp"
+            android:backgroundTint="@color/theme_color_light2"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/open_sans"
+            android:hint="Ex. user@gma.com"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/theme_color_base_dark"
+            android:textColorHighlight="@color/lightGray"
+            android:textColorHint="@color/blueGray"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/loginPasswordId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="57dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/theme_color_light2"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/open_sans"
+            android:hint="Ex. 1@34a"
+            android:inputType="textPassword"
+            android:textColor="@color/theme_color_base_dark"
+            android:textColorHighlight="@color/lightGray"
+            android:textColorHint="@color/blueGray"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:id="@+id/signUpRedirect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="22dp"
+            android:fontFamily="@font/roboto"
+            android:padding="10dp"
+            android:text="Don't have an account !"
+            android:textAlignment="center"
+            android:textColor="@color/theme_color_base_dark"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/loginBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contextClickable="true"
+        android:elevation="35dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="SIGNIN"
+        android:textColor="@color/lightGray"
+        android:textSize="20sp"
+        app:layout_constraintDimensionRatio="3:0.9"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6_login"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8_login"
+        app:layout_constraintStart_toStartOf="@+id/guideline7_login"
+        app:layout_constraintTop_toTopOf="@+id/guideline5_login"
+        app:neumorph_backgroundColor="@color/theme_color_base_dark"
+        app:neumorph_insetBottom="11dp"
+        app:neumorph_insetEnd="13dp"
+        app:neumorph_insetStart="10dp"
+        app:neumorph_insetTop="8dp"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowColorDark="@color/theme_color_light6"
+        app:neumorph_shadowColorLight="@color/lightGray"
+        app:neumorph_shadowElevation="4dp"
+        app:neumorph_shapeType="flat" />
+    <!--        app:neumorph_strokeColor="@color/lightGray"-->
+    <!--        app:neumorph_strokeWidth="1.5dp"-->
+
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="start|bottom"
+        android:text="Login"
+        android:textAlignment="gravity"
+        android:textColor="@color/theme_color_base_dark"
+        android:textSize="52sp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10_login"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8_login"
+        app:layout_constraintStart_toStartOf="@+id/guideline1_login"
+        app:layout_constraintTop_toTopOf="@+id/guideline9_login" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.855" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.955" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.73" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.42" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.56"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.5"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

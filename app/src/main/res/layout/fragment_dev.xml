@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color_light3"
+    tools:context=".DevFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/profile_page_rounded"
+            android:elevation="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/guidelinefd4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/dev_image"
+                android:layout_marginBottom="50dp" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Rupayan Roy"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:textColor="@color/theme_color_base_dark"
+                android:textStyle="normal"
+                android:layout_margin="20dp"/>
+
+            <com.tomer.fadingtextview.FadingTextView
+                android:id="@+id/textViewWork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="@color/theme_color_base_dark"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:layout_margin="5dp"/>
+
+            <LinearLayout
+                android:id="@+id/socialLinks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <ImageView
+                    android:id="@+id/conectTwitch"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="50dp"
+                    android:src="@drawable/twitch"/>
+
+                <ImageView
+                    android:id="@+id/connectLinkedIn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/linkedin"/>
+            </LinearLayout>
+        </LinearLayout>
+<!--        app:layout_constraintTop_toTopOf="@+id/guidelinefd3"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/guidelinefd2"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/guidelinefd1"-->
+
+<!--        <androidx.constraintlayout.widget.Guideline-->
+<!--            android:id="@+id/guidelinefd1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            app:layout_constraintGuide_begin="20dp"-->
+<!--            app:layout_constraintGuide_percent="0.04"/>-->
+<!--        -->
+<!--        <androidx.constraintlayout.widget.Guideline-->
+<!--            android:id="@+id/guidelinefd2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            app:layout_constraintGuide_begin="20dp"-->
+<!--            app:layout_constraintGuide_percent="0.96"/>-->
+
+<!--        <androidx.constraintlayout.widget.Guideline-->
+<!--            android:id="@+id/guidelinefd3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            app:layout_constraintGuide_begin="20dp"-->
+<!--            app:layout_constraintGuide_percent="0.18"/>-->
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelinefd4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent="0.82"/>
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelinefd5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent="0.82"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelinefd6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent="0.18"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

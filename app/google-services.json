@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1051653553637",
+    "project_id": "textture-9e0bb",
+    "storage_bucket": "textture-9e0bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051653553637:android:c6e0cb1172cc326698c30c",
+        "android_client_info": {
+          "package_name": "com.example.textture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1051653553637-8qshf1c341mddt9ffs1tgj7qeoins2t8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUvCJ6Wv-2uR-QL2zleudeHewphNP61Fo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1051653553637-8qshf1c341mddt9ffs1tgj7qeoins2t8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

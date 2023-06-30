@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TexTTure" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorAccent">@color/bone_white</item>
+        <item name="color">@color/alabaster</item>
+<!--        <item name="colorOnPrimary">@color/off_white</item>-->
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+<!--        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>-->
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+
+    </style>
+    <style name="CustomShapeAppearance">
+
+
+
+        <!-- Or if wants different radii depending on the corner. -->
+        <item name="neumorph_cornerSizeTopLeft">6dp</item>
+        <item name="neumorph_cornerSizeTopRight">6dp</item>
+        <item name="neumorph_cornerSizeBottomLeft">6dp</item>
+        <item name="neumorph_cornerSizeBottomRight">6dp</item>
+    </style>
+</resources>
